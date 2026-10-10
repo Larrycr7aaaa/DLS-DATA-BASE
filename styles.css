@@ -287,8 +287,28 @@ main {
 .progress span {
     display: block;
     height: 100%;
-    background: #ef5350;
     transition: width 0.4s ease;
+}
+
+/* Colores dinámicos para las barras de estadísticas */
+.progress span.stat-rojo {
+    background: #e53935;
+}
+
+.progress span.stat-naranja {
+    background: #fb8c00;
+}
+
+.progress span.stat-mostaza {
+    background: #d4a017;
+}
+
+.progress span.stat-verde {
+    background: #4caf50;
+}
+
+.progress span.stat-cian {
+    background: #00bcd4;
 }
 
 /* ================================= */
@@ -415,7 +435,7 @@ footer {
 
 .dark {
     background: #212121;
-    color: #ffffff;
+    color: #00FFFF;
 }
 
 /* ================================= */
