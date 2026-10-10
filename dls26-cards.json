@@ -467,6 +467,26 @@
         "technical": { "control": 100, "passing": 100, "shooting": 100, "tackling": 61 }
       }
     },
+      {
+      "id": "cristiano-ronaldo-2018-wc-heroes",
+      "name": "Tim Payne",
+      "image": "./payne.jpg",
+      "rating": 98,
+      "position": "LD",
+      "country": {
+        "name": "Nueva Zelanda",
+        "flag": "🇳🇿"
+      },
+      "team": "Selección de Nueva Zelanda",
+      "cardType": "HIDDEN",
+      "year": 2018,
+      "heightCm": 179,
+      "preferredFoot": "both",
+      "stats": { 
+        "physical": { "speed": 100, "acceleration": 100, "stamina": 100, "strength": 100 },
+        "technical": { "control": 100, "passing": 100, "shooting": 100, "tackling": 91 }
+      }
+    },
     {
       "id": "luis-suarez-2026-dream-stars",
       "name": "Luis Suárez",
@@ -840,9 +860,9 @@
         "flag": "🌏"
       },
       "team": "Unk?",
-      "cardType": "Un?",
+      "cardType": "HIDDEN",
       "year": 0,
-      "heightCm": 170,
+      "heightCm": 230,
       "preferredFoot": "left",
       "stats": {
         "physical": { "speed": 0, "acceleration": 0, "stamina": 0, "strength": 0 },
