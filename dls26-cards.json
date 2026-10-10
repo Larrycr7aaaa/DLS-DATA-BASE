@@ -1,7 +1,7 @@
 {
   "playlist": [
-    { "title": "Track 1 - Good Feeling", "file": "./sound 1 dls.mp3" },
-    { "title": "Track 2 - Supernatural", "file": "./sound 2 dls.mp3" },
+    { "title": "Good Feeling", "file": "./sound 1 dls.mp3" },
+    { "title": "Supernatural", "file": "./sound 2 dls.mp3" },
     { "title": "Fale Então", "file": "./sound 3 dls.mp3" },
     { "title": "7Son", "file": "./sound 4 dls.mp3" }
   ],
