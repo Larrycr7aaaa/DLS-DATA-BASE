@@ -1,15 +1,15 @@
 {
   "playlist": [
-    { "title": "Track 1 - Good Feeling", "file": "sound 1 dls.mp3" },
-    { "title": "Track 2 - Supernatural", "file": "sound 2 dls.mp3" },
-    { "title": "Track 3 - Funk DLS", "file": "sound 3 dls.mp3" },
-    { "title": "Track 4 - Cumbia DLS", "file": "sound 4 dls.mp3" }
+    { "title": "Track 1 - Good Feeling", "file": "./sound 1 dls.mp3" },
+    { "title": "Track 2 - Supernatural", "file": "./sound 2 dls.mp3" },
+    { "title": "Fale Então", "file": "./sound 3 dls.mp3" },
+    { "title": "7Son", "file": "./sound 4 dls.mp3" }
   ],
   "players": [
     {
       "id": "arda-guler-2026-dynamic-stars",
       "name": "Arda Güler",
-      "image": "DLS DATA BASE/guler.jpg",
+      "image": "./guler.jpg",
       "rating": 96,
       "position": "MCO",
       "country": {
@@ -29,7 +29,7 @@
     {
       "id": "eberechi-eze-2026-dynamic-stars",
       "name": "Eberechi Eze",
-      "image": "DLS DATA BASE/ee.jpg",
+      "image": "./ee.jpg",
       "rating": 96,
       "position": "MCO",
       "country": {
@@ -49,7 +49,7 @@
     {
       "id": "rodrigo-de-paul-2026-dynamic-stars",
       "name": "Rodrigo De Paul",
-      "image": "DLS DATA BASE/rdp.jpg",
+      "image": "./rdp.jpg",
       "rating": 96,
       "position": "MC",
       "country": {
@@ -69,7 +69,7 @@
     {
       "id": "richard-rios-2026-dynamic-stars",
       "name": "Richard Ríos",
-      "image": "DLS DATA BASE/rr.jpg",
+      "image": "./rr.jpg",
       "rating": 96,
       "position": "MCD",
       "country": {
@@ -89,7 +89,7 @@
     {
       "id": "weston-mckennie-2026-dynamic-stars",
       "name": "Weston McKennie",
-      "image": "DLS DATA BASE/mc kennie.jpeg",
+      "image": "./mc kennie.jpeg",
       "rating": 96,
       "position": "MC",
       "country": {
@@ -109,7 +109,7 @@
     {
       "id": "nico-williams-2026-dynamic-stars",
       "name": "Nico Williams",
-      "image": "DLS DATA BASE/nw.jpg",
+      "image": "./nw.jpg",
       "rating": 96,
       "position": "EI",
       "country": {
@@ -129,7 +129,7 @@
     {
       "id": "ousmane-dembele-2025-team-of-2025",
       "name": "Ousmane Dembélé",
-      "image": "DLS DATA BASE/dembele.jpg",
+      "image": "./dembele.jpg",
       "rating": 97,
       "position": "ED",
       "country": {
@@ -149,7 +149,7 @@
     {
       "id": "kylian-mbappe-2025-team-of-2025",
       "name": "Kylian Mbappé",
-      "image": "DLS DATA BASE/mbappe.jpg",
+      "image": "./mbappe.jpg",
       "rating": 97,
       "position": "DC",
       "country": {
@@ -169,7 +169,7 @@
     {
       "id": "harry-kane-2025-team-of-2025",
       "name": "Harry Kane",
-      "image": "DLS DATA BASE/kane.jpg",
+      "image": "./kane.jpg",
       "rating": 97,
       "position": "DC",
       "country": {
@@ -189,7 +189,7 @@
     {
       "id": "pedri-2025-team-of-2025",
       "name": "Pedri",
-      "image": "DLS DATA BASE/pedri.jpeg",
+      "image": "./pedri.jpeg",
       "rating": 96,
       "position": "MC",
       "country": {
@@ -209,7 +209,7 @@
     {
       "id": "joao-pedro-2026-nuevas-especiales",
       "name": "João Pedro",
-      "image": "DLS DATA BASE/j.pedro.jpg",
+      "image": "./j.pedro.jpg",
       "rating": 93,
       "position": "DC",
       "country": {
@@ -229,7 +229,7 @@
     {
       "id": "kevin-de-bruyne-2018-wc-heroes",
       "name": "Kevin De Bruyne",
-      "image": "DLS DATA BASE/de bruyne.jpg",
+      "image": "./de bruyne.jpg",
       "rating": 96,
       "position": "MCO",
       "country": {
@@ -249,7 +249,7 @@
     {
       "id": "luka-modric-2018-champions",
       "name": "Luka Modrić",
-      "image": "DLS DATA BASE/modric.jpeg",
+      "image": "./modric.jpeg",
       "rating": 96,
       "position": "MC",
       "country": {
@@ -269,7 +269,7 @@
     {
       "id": "keylor-navas-2014-wc-heroes",
       "name": "Keylor Navas",
-      "image": "DLS DATA BASE/k.navas.jpeg",
+      "image": "./k.navas.jpeg",
       "rating": 95,
       "position": "GK",
       "country": {
@@ -290,7 +290,7 @@
     {
       "id": "angel-di-maria-2014-champions",
       "name": "Ángel Di María",
-      "image": "DLS DATA BASE/di maria.jpeg",
+      "image": "./di maria.jpeg",
       "rating": 95,
       "position": "ED",
       "country": {
@@ -310,7 +310,7 @@
     {
       "id": "ngolo-kante-2016-champions",
       "name": "N'Golo Kanté",
-      "image": "DLS DATA BASE/kante.png",
+      "image": "./kante.png",
       "rating": 95,
       "position": "MCD",
       "country": {
@@ -330,7 +330,7 @@
     {
       "id": "james-rodriguez-2014-wc-heroes",
       "name": "James Rodríguez",
-      "image": "DLS DATA BASE/james.png",
+      "image": "./james.png",
       "rating": 98,
       "position": "MCO",
       "country": {
@@ -350,7 +350,7 @@
     {
       "id": "fabio-cannavaro-2006-legends",
       "name": "Fabio Cannavaro",
-      "image": "DLS DATA BASE/cannavaro.jpg",
+      "image": "./cannavaro.jpg",
       "rating": 98,
       "position": "DFC",
       "country": {
@@ -370,7 +370,7 @@
     {
       "id": "rivaldo-1999-legends",
       "name": "Rivaldo",
-      "image": "DLS DATA BASE/rivaldo.jpg",
+      "image": "./rivaldo.jpg",
       "rating": 98,
       "position": "EI",
       "country": {
@@ -390,7 +390,7 @@
     {
       "id": "carlos-valderrama-1993-legends",
       "name": "Carlos Valderrama",
-      "image": "DLS DATA BASE/el pibe.jpg",
+      "image": "./el pibe.jpg",
       "rating": 96,
       "position": "MCO",
       "country": {
@@ -410,7 +410,7 @@
     {
       "id": "lionel-messi-2012-champions",
       "name": "Lionel Messi",
-      "image": "DLS DATA BASE/messi2012.jpg",
+      "image": "./messi2012.jpg",
       "rating": 98,
       "position": "ED",
       "country": {
@@ -430,7 +430,7 @@
     {
       "id": "cristiano-ronaldo-2014-champions",
       "name": "Cristiano Ronaldo",
-      "image": "DLS DATA BASE/cr17.jpg",
+      "image": "./cr17.jpg",
       "rating": 98,
       "position": "EI",
       "country": {
@@ -450,7 +450,7 @@
     {
       "id": "cristiano-ronaldo-2018-wc-heroes",
       "name": "Cristiano Ronaldo",
-      "image": "DLS DATA BASE/cr18.jpg",
+      "image": "./cr18.jpg",
       "rating": 97,
       "position": "DC",
       "country": {
@@ -470,7 +470,7 @@
     {
       "id": "luis-suarez-2026-dream-stars",
       "name": "Luis Suárez",
-      "image": "DLS DATA BASE/suarez.jpg",
+      "image": "./suarez.jpg",
       "rating": 94,
       "position": "DC",
       "country": {
@@ -490,7 +490,7 @@
     {
       "id": "kenan-yildiz-2026-dream-stars",
       "name": "Kenan Yildiz",
-      "image": "DLS DATA BASE/yildiz.jpg",
+      "image": "./yildiz.jpg",
       "rating": 95,
       "position": "SD",
       "country": {
@@ -510,7 +510,7 @@
     {
       "id": "patrick-berg-2026-dream-stars",
       "name": "Patrick Berg",
-      "image": "DLS DATA BASE/berg.jpeg",
+      "image": "./berg.jpeg",
       "rating": 95,
       "position": "MCD",
       "country": {
@@ -530,7 +530,7 @@
     {
       "id": "julian-ryerson-2026-dream-stars",
       "name": "Julian Ryerson",
-      "image": "DLS DATA BASE/ryerson.jpeg",
+      "image": "./ryerson.jpeg",
       "rating": 95,
       "position": "LD",
       "country": {
@@ -550,7 +550,7 @@
     {
       "id": "nicolas-otamendi-2018-cult-heroes",
       "name": "Nicolás Otamendi",
-      "image": "DLS DATA BASE/otamendi.jpg",
+      "image": "./otamendi.jpg",
       "rating": 94,
       "position": "DFC",
       "country": {
@@ -570,7 +570,7 @@
     {
       "id": "pierre-emerick-aubameyang-2017-cult-heroes",
       "name": "Pierre-Emerick Aubameyang",
-      "image": "DLS DATA BASE/aubameyang.jpg",
+      "image": "./aubameyang.jpg",
       "rating": 95,
       "position": "DC",
       "country": {
@@ -590,7 +590,7 @@
     {
       "id": "isco-2017-cult-heroes",
       "name": "Isco",
-      "image": "DLS DATA BASE/isco.jpg",
+      "image": "./isco.jpg",
       "rating": 94,
       "position": "MCO",
       "country": {
@@ -610,7 +610,7 @@
     {
       "id": "paulo-dybala-2020-cult-heroes",
       "name": "Paulo Dybala",
-      "image": "DLS DATA BASE/dybala.jpeg",
+      "image": "./dybala.jpeg",
       "rating": 95,
       "position": "SD",
       "country": {
@@ -630,7 +630,7 @@
     {
       "id": "david-luiz-2017-cult-heroes",
       "name": "David Luiz",
-      "image": "DLS DATA BASE/dl.jpg",
+      "image": "./dl.jpg",
       "rating": 94,
       "position": "DFC",
       "country": {
@@ -650,7 +650,7 @@
     {
       "id": "vozinha-2026-cult-heroes",
       "name": "Vozinha",
-      "image": "DLS DATA BASE/vozinha.png",
+      "image": "./vozinha.png",
       "rating": 94,
       "position": "GK",
       "country": {
@@ -671,7 +671,7 @@
     {
       "id": "lamine-yamal-2026-wc-champions",
       "name": "Lamine Yamal",
-      "image": "DLS DATA BASE/yamal.png",
+      "image": "./yamal.png",
       "rating": 97,
       "position": "ED",
       "country": {
@@ -691,7 +691,7 @@
     {
       "id": "rodri-2026-wc-champions",
       "name": "Rodri",
-      "image": "DLS DATA BASE/rodri.png",
+      "image": "./rodri.png",
       "rating": 97,
       "position": "MCD",
       "country": {
@@ -711,7 +711,7 @@
     {
       "id": "pau-cubarsi-2026-wc-champions",
       "name": "Pau Cubarsí",
-      "image": "DLS DATA BASE/cubarsi.png",
+      "image": "./cubarsi.png",
       "rating": 95,
       "position": "DFC",
       "country": {
@@ -731,7 +731,7 @@
     {
       "id": "marc-cucurella-2026-wc-champions",
       "name": "Marc Cucurella",
-      "image": "DLS DATA BASE/cucurella.png",
+      "image": "./cucurella.png",
       "rating": 95,
       "position": "LI",
       "country": {
@@ -751,7 +751,7 @@
     {
       "id": "paul-pogba-2018-wc-champions",
       "name": "Paul Pogba",
-      "image": "DLS DATA BASE/pogba.png",
+      "image": "./pogba.png",
       "rating": 97,
       "position": "MC",
       "country": {
@@ -771,7 +771,7 @@
     {
       "id": "emiliano-martinez-2022-wc-champions",
       "name": "Emiliano Martínez",
-      "image": "DLS DATA BASE/dibu.png",
+      "image": "./dibu.png",
       "rating": 93,
       "position": "GK",
       "country": {
@@ -792,7 +792,7 @@
     {
       "id": "enzo-fernandez-2022-wc-champions",
       "name": "Enzo Fernández",
-      "image": "DLS DATA BASE/enzo.png",
+      "image": "./enzo.png",
       "rating": 95,
       "position": "MC",
       "country": {
@@ -812,7 +812,7 @@
     {
       "id": "benjamin-pavard-2018-wc-champions",
       "name": "Benjamin Pavard",
-      "image": "DLS DATA BASE/pavard.png",
+      "image": "./pavard.png",
       "rating": 94,
       "position": "LD",
       "country": {
@@ -832,7 +832,7 @@
     {
       "id": "unknown-dls-1",
       "name": "?",
-      "image": "DLS DATA BASE/fut.jpg",
+      "image": "./download.jpg",
       "rating": 4,
       "position": "ALL",
       "country": {
@@ -845,8 +845,8 @@
       "heightCm": 170,
       "preferredFoot": "left",
       "stats": {
-        "physical": { "speed": 0, "acceleration": 0,"stamina":0, "strength": 0 },
-        "technical": { "control": 0, "passing": 0,"shooting":0, "tackling": 0 },
+        "physical": { "speed": 0, "acceleration": 0, "stamina": 0, "strength": 0 },
+        "technical": { "control": 0, "passing": 0, "shooting": 0, "tackling": 0 },
         "goalkeeping": { "reflexes": 0, "handling": 0 }
       }
     }
