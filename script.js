@@ -1,6 +1,6 @@
 // ===========================================
 // DLS 26 CARDS SPA
-// API Local: dls26-cards_3.json
+// API Local: dls26-cards.json
 // ===========================================
 
 const URL = './dls26-cards.json';
@@ -92,6 +92,18 @@ function obtenerClasePosicion(posicion) {
     if (["MC", "CAI", "CAD", "MCO", "MCD"].includes(pos)) return "pos-med";
 
     return "pos-default";
+}
+
+// ==============================
+// COLORES DE LAS BARRAS DE STATS
+// ==============================
+
+function obtenerClaseStat(valor) {
+    if (valor < 60) return "stat-rojo";
+    if (valor <= 69) return "stat-naranja";
+    if (valor <= 79) return "stat-mostaza";
+    if (valor <= 89) return "stat-verde";
+    return "stat-cian";
 }
 
 // ==============================
@@ -246,6 +258,7 @@ function mostrarDetalle(player) {
 
 function renderBarraStat(label, valor) {
     if (valor === undefined) return '';
+    const claseColor = obtenerClaseStat(valor);
     return `
         <div class="stat">
             <div class="stat-header">
@@ -253,7 +266,7 @@ function renderBarraStat(label, valor) {
                 <span>${valor}</span>
             </div>
             <div class="progress">
-                <span style="width: ${Math.min(valor, 100)}%;"></span>
+                <span class="${claseColor}" style="width: ${Math.min(valor, 100)}%;"></span>
             </div>
         </div>
     `;
