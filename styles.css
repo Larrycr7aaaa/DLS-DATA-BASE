@@ -168,7 +168,7 @@ main {
 }
 
 /* ================================= */
-/* TARJETAS */
+/* TARJETAS E IMÁGENES DE JUGADORES */
 /* ================================= */
 
 .card {
@@ -179,12 +179,6 @@ main {
     transition: .3s;
     cursor: pointer;
 }
-
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, .25);
-}
-
 .card-body {
     padding: 18px;
 }
@@ -192,6 +186,15 @@ main {
 .card-body h3 {
     margin: 8px 0;
     text-transform: capitalize;
+}
+
+/* Tamaño controlado para las imágenes de las cartas */
+.player-img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .id {
@@ -252,6 +255,15 @@ main {
 
 #detailContainer h2 {
     color: #212121;
+}
+
+/* Tamaño e imagen dentro del panel lateral */
+.detail-img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin: 10px 0;
 }
 
 .stats {
