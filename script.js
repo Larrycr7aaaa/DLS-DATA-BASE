@@ -12,7 +12,7 @@ const URL = './dls26-cards.json';
 let todosLosJugadores = [];
 let jugadoresFiltrados = [];
 let offset = 0;
-const limite = 8;
+const limite = 9; // Límite establecido a 3 cartas por página
 
 // ==============================
 // ELEMENTOS DEL DOM
@@ -188,15 +188,17 @@ function crearCard(player) {
     const clasePosicion = obtenerClasePosicion(player.position);
 
     card.innerHTML = `
-        <div class="card-body">
-            <span class="id">#${player.year} • ${player.country ? player.country.flag : ''}</span>
-            <h3>${player.name}</h3>
-            <p><strong>${player.team}</strong></p>
-            <span class="tipo ${clasePosicion}">${player.position}</span>
-            <span class="tipo dark">${player.rating} OVR</span>
-            <button>Ver Información</button>
-        </div>
-    `;
+    <div class="card-body">
+        <img src="${player.image || 'ruta/imagen-por-defecto.png'}" alt="${player.name}" class="player-img">
+        <span class="id">#${player.year}
+        ${player.country ? player.country.flag : ''}</span>
+        <h3>${player.name}</h3>
+        <p><strong>${player.team}</strong></p>
+        <span class="tipo ${clasePosicion}">${player.position}</span>
+        <span class="tipo dark">${player.rating} OVR</span>
+        <button>Ver Información</button>
+    </div>
+`;
 
     card.querySelector("button").addEventListener("click", () => {
         mostrarDetalle(player);
@@ -243,6 +245,7 @@ function mostrarDetalle(player) {
 
     detailContainer.innerHTML = `
         <h2>${player.name} ${player.country ? player.country.flag : ''}</h2>
+        <img src="${player.image || 'ruta/imagen-por-defecto.png'}" alt="${player.name}" class="detail-img">
         <p><strong>Posición:</strong> <span class="tipo ${clasePosicion}">${player.position}</span> | <strong>Media:</strong> ${player.rating}</p>
         <p><strong>Equipo:</strong> ${player.team}</p>
         <p><strong>País:</strong> ${player.country ? player.country.name : 'N/A'}</p>
