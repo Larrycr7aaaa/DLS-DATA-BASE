@@ -427,6 +427,26 @@
         "technical": { "control": 100, "passing": 100, "shooting": 100, "tackling": 50 }
       }
     },
+     {
+      "id": "neymar-jr-2015-champions",
+      "name": "Neymar Da Silva Santos Jr",
+      "image": "./neymarjpeg",
+      "rating": 95,
+      "position": "ED",
+      "country": {
+        "name": "Argentina",
+        "flag": "🇦🇷"
+      },
+      "team": "Selección de Argentina",
+      "cardType": "Champions",
+      "year": 2014,
+      "heightCm": 178,
+      "preferredFoot": "left",
+      "stats": {
+        "physical": { "speed": 100, "acceleration": 100, "stamina": 100, "strength": 75 },
+        "technical": { "control": 100, "passing": 100, "shooting": 100, "tackling": 54 }
+      }
+    },
     {
       "id": "cristiano-ronaldo-2014-champions",
       "name": "Cristiano Ronaldo",
