@@ -1,3 +1,4 @@
+
 /* ================================= */
 /* RESET */
 /* ================================= */
@@ -284,10 +285,17 @@ main {
     font-weight: 600;
 }
 
+/* Número de la estadística con el color de la barra */
+.stat-header span:last-child {
+    color: #ef5350;
+    font-weight: 700;
+}
+
+/* Barra con fondo negro */
 .progress {
     width: 100%;
     height: 12px;
-    background: #ddd;
+    background: #000000;
     border-radius: 20px;
     overflow: hidden;
 }
