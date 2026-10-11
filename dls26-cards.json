@@ -430,14 +430,14 @@
      {
       "id": "neymar-jr-2015-champions",
       "name": "Neymar Da Silva Santos Jr",
-      "image": "./neymarjpeg",
+      "image": "./neymrjpg",
       "rating": 95,
-      "position": "ED",
+      "position": "EI",
       "country": {
-        "name": "Argentina",
-        "flag": "🇦🇷"
+        "name": "Brazil",
+        "flag": "🇧🇷"
       },
-      "team": "Selección de Argentina",
+      "team": "FC Barcelona",
       "cardType": "Champions",
       "year": 2014,
       "heightCm": 178,
@@ -488,10 +488,10 @@
       }
     },
       {
-      "id": "cristiano-ronaldo-2018-wc-heroes",
+      "id": "tim-payne-2026-hidden",
       "name": "Tim Payne",
       "image": "./payne.jpg",
-      "rating": 98,
+      "rating": 88,
       "position": "LD",
       "country": {
         "name": "Nueva Zelanda",
@@ -499,12 +499,12 @@
       },
       "team": "Selección de Nueva Zelanda",
       "cardType": "HIDDEN",
-      "year": 2018,
+      "year": 2026,
       "heightCm": 179,
       "preferredFoot": "both",
       "stats": { 
-        "physical": { "speed": 100, "acceleration": 100, "stamina": 100, "strength": 100 },
-        "technical": { "control": 100, "passing": 100, "shooting": 100, "tackling": 91 }
+        "physical": { "speed": 70, "acceleration": 80, "stamina": 100, "strength": 88 },
+        "technical": { "control": 80, "passing": 90, "shooting": 78, "tackling": 91 }
       }
     },
     {
