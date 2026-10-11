@@ -1,6 +1,6 @@
 // ===========================================
 // DLS 26 CARDS SPA
-// API Local: dls26-cards.json
+// API Local: dls26-cards_3.json
 // ===========================================
 
 const URL = './dls26-cards.json';
@@ -12,7 +12,7 @@ const URL = './dls26-cards.json';
 let todosLosJugadores = [];
 let jugadoresFiltrados = [];
 let offset = 0;
-const limite = 9; // Límite establecido a 3 cartas por página
+const limite = 8;
 
 // ==============================
 // ELEMENTOS DEL DOM
@@ -92,18 +92,6 @@ function obtenerClasePosicion(posicion) {
     if (["MC", "CAI", "CAD", "MCO", "MCD"].includes(pos)) return "pos-med";
 
     return "pos-default";
-}
-
-// ==============================
-// COLORES DE LAS BARRAS DE STATS
-// ==============================
-
-function obtenerClaseStat(valor) {
-    if (valor < 60) return "stat-rojo";
-    if (valor <= 69) return "stat-naranja";
-    if (valor <= 79) return "stat-mostaza";
-    if (valor <= 89) return "stat-verde";
-    return "stat-cian";
 }
 
 // ==============================
@@ -188,19 +176,17 @@ function crearCard(player) {
     const clasePosicion = obtenerClasePosicion(player.position);
 
     card.innerHTML = `
-    <div class="card-body">
-        <img src="${player.image || 'ruta/imagen-por-defecto.png'}" alt="${player.name}" class="player-img">
-        <span class="id">#${player.year}
-        ${player.country ? player.country.flag : ''}</span>
-        <h3>${player.name}</h3>
-        <p><strong>${player.team}</strong></p>
-        <span class="tipo ${clasePosicion}">${player.position}</span>
-        <span class="tipo dark">${player.rating} OVR</span>
-        <button>Ver Información</button>
-    </div>
-`;
+        <div class="card-body">
+            <span class="id">#${player.year || ''} • ${player.country ? player.country.flag : ''}</span>
+            <h3>${player.name}</h3>
+            <p><strong>${player.team}</strong></p>
+            <span class="tipo ${clasePosicion}">${player.position}</span>
+            <span class="tipo dark">${player.rating} OVR</span>
+            <button class="btn-info">Ver Información</button>
+        </div>
+    `;
 
-    card.querySelector("button").addEventListener("click", () => {
+    card.querySelector(".btn-info").addEventListener("click", () => {
         mostrarDetalle(player);
     });
 
@@ -245,11 +231,10 @@ function mostrarDetalle(player) {
 
     detailContainer.innerHTML = `
         <h2>${player.name} ${player.country ? player.country.flag : ''}</h2>
-        <img src="${player.image || 'ruta/imagen-por-defecto.png'}" alt="${player.name}" class="detail-img">
         <p><strong>Posición:</strong> <span class="tipo ${clasePosicion}">${player.position}</span> | <strong>Media:</strong> ${player.rating}</p>
         <p><strong>Equipo:</strong> ${player.team}</p>
         <p><strong>País:</strong> ${player.country ? player.country.name : 'N/A'}</p>
-        <p><strong>Tipo de carta:</strong> ${player.cardType || 'Estándar'} (${player.year})</p>
+        <p><strong>Tipo de carta:</strong> ${player.cardType || 'Estándar'} (${player.year || ''})</p>
         <p><strong>Pie preferido:</strong> ${player.preferredFoot || 'N/A'} ${player.heightCm ? `| <strong>Altura:</strong> ${player.heightCm} cm` : ''}</p>
 
         <div class="stats">
@@ -261,7 +246,6 @@ function mostrarDetalle(player) {
 
 function renderBarraStat(label, valor) {
     if (valor === undefined) return '';
-    const claseColor = obtenerClaseStat(valor);
     return `
         <div class="stat">
             <div class="stat-header">
@@ -269,7 +253,7 @@ function renderBarraStat(label, valor) {
                 <span>${valor}</span>
             </div>
             <div class="progress">
-                <span class="${claseColor}" style="width: ${Math.min(valor, 100)}%;"></span>
+                <span style="width: ${Math.min(valor, 100)}%;"></span>
             </div>
         </div>
     `;
@@ -283,11 +267,12 @@ function buscarJugador() {
     const busqueda = searchInput.value.trim().toLowerCase();
 
     jugadoresFiltrados = todosLosJugadores.filter(p =>
-        p.name.toLowerCase().includes(busqueda) ||
-        p.team.toLowerCase().includes(busqueda) ||
-        (p.country && p.country.name.toLowerCase().includes(busqueda)) ||
-        p.position.toLowerCase().includes(busqueda) ||
-        (p.cardType && p.cardType.toLowerCase().includes(busqueda))
+        p.name?.toLowerCase().includes(busqueda) ||
+        p.team?.toLowerCase().includes(busqueda) ||
+        (p.country && p.country.name?.toLowerCase().includes(busqueda)) ||
+        p.position?.toLowerCase().includes(busqueda) ||
+        (p.cardType && p.cardType.toLowerCase().includes(busqueda)) ||
+        (p.rating !== undefined && String(p.rating).includes(busqueda))
     );
 
     offset = 0;
